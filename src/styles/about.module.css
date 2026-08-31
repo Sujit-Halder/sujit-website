@@ -1,0 +1,444 @@
+.aboutSubheader {
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    width: 45vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.generalHeader {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-accent);
+    text-shadow: 0 0 30px var(--color-shadow);
+}
+
+.myName {
+    font-size: 2rem; 
+    font-weight: 700; 
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color-accent); 
+    padding-bottom: 5px;
+    display: inline-block;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
+}
+
+.aboutMe {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    width: 100%; 
+    text-align: left;
+    margin-top: 0; 
+    color: var(--color-text);
+}
+
+.resume {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    color: var(--color-text);
+    text-shadow: 0 0 10px rgba(158, 124, 12, 0.3);
+}
+
+.resume:hover {
+    color: var(--color-accent);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+    min-width: 320px;
+    max-width: 1280px;
+    min-height: 100vh; 
+}
+
+.imageCaption {
+    margin-top: 8px; 
+    font-size: 14px; 
+    font-weight: bold;
+    color: white; 
+    text-transform: capitalize; 
+    text-align: center;
+}
+  
+.aboutBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 30px;
+    
+    width: 100%;  
+    max-width: 1200px;  
+    min-height: 500px;
+    max-height: 80vh;
+    
+    margin: 20px auto; 
+    padding: 30px;
+    border-radius: 15px; 
+    flex-wrap: wrap;
+
+    border: 3px solid #9E7C0C; 
+    box-shadow: 0 0 30px rgba(158, 124, 12, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(36, 23, 115, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    font-family: var(--font-body);
+}
+
+.aboutBox.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.bolded {
+    font-weight: 700;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
+}
+
+.classesContainer {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.classesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.classesList li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.text {
+    flex: 1; 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 2s ease, transform 2s ease;
+    transition-delay: 0.2s;
+}
+
+.text.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.aboutMe {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 1.05rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.photo {
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default; 
+    width: 300px;
+    min-width: 250px;
+    height: 475px;
+    overflow: hidden;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition-delay: 0.7s;
+}
+
+.photo.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.profilePhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+    border-radius: 10px; 
+}
+
+.profilePhoto:hover {
+    transform: scale(1.1); 
+    border-radius: 10px; 
+}
+
+  
+/* Tablet and smaller desktop */
+@media screen and (max-width: 1200px) {
+    .aboutBox {
+        max-width: 95%;
+        padding: 25px;
+        gap: 25px;
+    }
+    
+    .photo {
+        width: 280px;
+        height: 350px;
+    }
+}
+
+/* Tablet portrait */
+@media screen and (max-width: 968px) {
+    .aboutBox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        max-height: none;
+        padding: 25px;
+    }
+    
+    .text {
+        width: 100%;
+        min-width: auto;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .aboutMe {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .photo {
+        width: 250px;
+        height: 300px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile landscape */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .aboutBox {
+        padding: 20px;
+        gap: 20px;
+        margin: 10px auto;
+    }
+    
+    .generalHeader {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .myName {
+        font-size: 1.8rem;
+    }
+    
+    .aboutMe {
+        font-size: 1rem;
+    }
+    
+    .photo {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .profilePhoto {
+        border-radius: 8px;
+    }
+}
+
+/* Mobile portrait */
+@media screen and (max-width: 480px) {
+    .aboutBox {
+        padding: 15px;
+        margin: 5px auto;
+        border-radius: 10px;
+    }
+    
+    .generalHeader {
+        font-size: 2rem;
+    }
+    
+    .myName {
+        font-size: 1.5rem;
+    }
+    
+    .aboutMe {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    
+    .photo {
+        width: 180px;
+        height: 220px;
+    }
+    
+    /* Make the class lists more compact on mobile */
+    .classesContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .classesList {
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    .classesList li {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 360px) {
+    .aboutBox {
+        padding: 10px;
+    }
+    
+    .generalHeader {
+        font-size: 1.8rem;
+    }
+    
+    .myName {
+        font-size: 1.3rem;
+    }
+    
+    .aboutMe {
+        font-size: 0.9rem;
+    }
+    
+    .photo {
+        width: 150px;
+        height: 180px;
+    }
+}
+
+/* Door Transition Styles */
+.doorContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.doorLeft, .doorRight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100%;
+    background-image: url('/backgrounds/door.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 21;
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doorLeft {
+    transform: translate(-50%, -50%);
+    background-position: left center;
+}
+
+.doorRight {
+    transform: translate(-50%, -50%);
+    background-position: right center;
+}
+
+.doorLeft.open {
+    transform: translate(-150%, -50%);
+}
+
+.doorRight.open {
+    transform: translate(50%, -50%);
+}
+
+.doorOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-accent);
+    z-index: 20;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+.doorOverlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hide doors on smaller screens */
+@media screen and (max-width: 1200px) {
+    .doorContainer {
+        display: none;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+

@@ -1,0 +1,151 @@
+.generalHeader {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-accent);
+    text-shadow: 0 0 20px rgba(158, 124, 12, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+    min-width: 320px;
+    max-width: 1280px;
+    min-height: 100vh; 
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-areas: 
+        "languages languages"
+        "frameworks devtools";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    max-width: 1300px;
+}
+
+.categorySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+
+.languagesSection {
+    grid-area: languages;
+}
+
+.languagesSection.categorySection {
+    gap: -10rem;
+    margin-top: -35px;
+}
+
+.categorySection:nth-child(2) {
+    grid-area: frameworks;
+}
+
+.categorySection:nth-child(3) {
+    grid-area: devtools;
+}
+
+.categoryTitle {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
+    border-bottom: 2px solid var(--color-accent);
+
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    text-shadow: 0 0 10px rgba(158, 124, 12, 0.3);
+}
+
+.technologiesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 500px;
+}
+
+.languagesSection .technologiesContainer {
+    max-width: 800px;
+}
+  
+.technologyItem {
+    height: 6.7rem; 
+    width: 6rem;  
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .skillsGrid {
+        grid-template-areas: 
+            "languages"
+            "frameworks"
+            "devtools";
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .categoryTitle {
+        font-size: 1.5rem;
+    }
+    
+    .technologiesContainer {
+        gap: 2rem;
+        max-width: 600px;
+        padding-bottom: 1rem;
+    }
+    
+    .languagesSection .technologiesContainer {
+        max-width: 600px;
+        gap: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 0;
+    }
+    
+    .skillsGrid {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .categoryTitle {
+        font-size: 1.3rem;
+    }
+    
+    .technologiesContainer {
+        gap: 1.5rem;
+        max-width: 400px;
+        padding-bottom: 1rem;
+    }
+    
+    .languagesSection .technologiesContainer {
+        gap: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .technologyItem {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+  
+  

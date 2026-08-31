@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oxanium:wght@200..800&display=swap');
+
+/* 
+  top level color schemes
+
+  background - #121212 - black
+  titles - #00D8FF - cyan blue thing
+  normal - #E0E0E0 - gray white
+  accent 1 - #FF6E6E - red pink 
+  accent 2 - #A970FF - lavender purple
+  accent 3 - #FFD700 - yellow
+  accent 4 - #9B59FF - purple
+
+*/
+
+:root {
+  --font-heading: 'Anta', sans-serif;
+  --font-body: "Oxanium", sans-serif;
+  --color-bg-main: #2f404d;
+  --color-bg-secondary: #3d898d;
+  --color-bg-third: #85ebd9;
+  --color-special: #C0FF6B;
+  --color-secondary: #a0ffe3;  /* --color-bg-main: #2B2B2B;
+  --color-special: #5E4B2C;
+  --color-secondary: #8A9A5B; */
+  --color-text: #FFFFFF;
+  --color-accent: #C9A635;
+  --color-accent2: #c60c30;
+  --color-shadow: rgba(158, 124, 12, 0.6);
+  --color-title: #fff;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--color-text);
+  background: linear-gradient(135deg, #283349 0%, #0b1634 50%, #0F172A 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, a {
+  font-family: var(--font-body); 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); 
+}

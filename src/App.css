@@ -1,0 +1,28 @@
+
+
+section {
+  min-height: 100vh; 
+  padding: 0rem;
+  margin: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; 
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+  /* overflow-y: auto;  */
+  scroll-snap-type: y mandatory; /* Y-axis snapping */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Ensure the container is full screen height */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; 
+}
+
+
