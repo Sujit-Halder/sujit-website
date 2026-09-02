@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <a href="#Hero" className={styles.navTitle}>
-        Alex Shrestha
+        Sujit Halder
       </a>
       
       {/* Hamburger Menu Button */}

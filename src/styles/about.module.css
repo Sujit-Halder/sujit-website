@@ -14,13 +14,14 @@
     text-align: center;
     color: var(--color-accent);
     text-shadow: 0 0 30px var(--color-shadow);
+    margin:0 0 0 0;
 }
 
 .myName {
-    font-size: 2rem; 
-    font-weight: 700; 
-    margin-bottom: 10px;
-    border-bottom: 2px solid var(--color-accent); 
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid var(--color-accent);
     padding-bottom: 5px;
     display: inline-block;
     font-family: var(--font-body);
@@ -29,12 +30,22 @@
 }
 
 .aboutMe {
-    font-size: 1rem; 
-    line-height: 1.5; 
-    width: 100%; 
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
     text-align: left;
-    margin-top: 0; 
+    margin-top: 0;
     color: var(--color-text);
+}
+
+.aboutMe h3,
+.aboutMe p {
+    margin: 0 0 0 0; 
+}
+
+.aboutMe ul {
+    margin: 0;
+    padding: 0;
 }
 
 .resume {
@@ -51,44 +62,44 @@
 
 .container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin: 0 auto;
     padding: 0rem;
     text-align: center;
     min-width: 320px;
     max-width: 1280px;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .imageCaption {
-    margin-top: 8px; 
-    font-size: 14px; 
+    margin-top: 8px;
+    font-size: 14px;
     font-weight: bold;
-    color: white; 
-    text-transform: capitalize; 
+    color: white;
+    text-transform: capitalize;
     text-align: center;
 }
-  
+
 .aboutBox {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 30px;
-    
-    width: 100%;  
-    max-width: 1200px;  
+
+    width: 100%;
+    max-width: 1200px;
     min-height: 500px;
     max-height: 80vh;
-    
-    margin: 20px auto; 
+
+    margin: 20px auto;
     padding: 30px;
-    border-radius: 15px; 
+    border-radius: 15px;
     flex-wrap: wrap;
 
-    border: 3px solid #9E7C0C; 
-    box-shadow: 0 0 30px rgba(158, 124, 12, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    border: 3px solid #9E7C0C;
+    box-shadow: 0 0 30px rgba(158, 124, 12, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     overflow-x: hidden;
     background: rgba(36, 23, 115, 0.1);
@@ -130,7 +141,7 @@
 }
 
 .text {
-    flex: 1; 
+    flex: 1;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -156,11 +167,11 @@
 }
 
 .photo {
-    border-radius: 10px; 
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: default; 
+    cursor: default;
     width: 300px;
     min-width: 250px;
     height: 475px;
@@ -180,17 +191,17 @@
 .profilePhoto {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    transition: transform 0.5s ease; 
-    border-radius: 10px; 
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
 }
 
 .profilePhoto:hover {
-    transform: scale(1.1); 
-    border-radius: 10px; 
+    transform: scale(1.1);
+    border-radius: 10px;
 }
 
-  
+
 /* Tablet and smaller desktop */
 @media screen and (max-width: 1200px) {
     .aboutBox {
@@ -198,7 +209,7 @@
         padding: 25px;
         gap: 25px;
     }
-    
+
     .photo {
         width: 280px;
         height: 350px;
@@ -215,19 +226,19 @@
         max-height: none;
         padding: 25px;
     }
-    
+
     .text {
         width: 100%;
         min-width: auto;
         align-items: center;
         text-align: center;
     }
-    
+
     .aboutMe {
         padding-right: 0;
         text-align: center;
     }
-    
+
     .photo {
         width: 250px;
         height: 300px;
@@ -241,31 +252,31 @@
     .container {
         padding: 10px;
     }
-    
+
     .aboutBox {
         padding: 20px;
         gap: 20px;
         margin: 10px auto;
     }
-    
+
     .generalHeader {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
-    
+
     .myName {
         font-size: 1.8rem;
     }
-    
+
     .aboutMe {
         font-size: 1rem;
     }
-    
+
     .photo {
         width: 200px;
         height: 250px;
     }
-    
+
     .profilePhoto {
         border-radius: 8px;
     }
@@ -278,36 +289,36 @@
         margin: 5px auto;
         border-radius: 10px;
     }
-    
+
     .generalHeader {
         font-size: 2rem;
     }
-    
+
     .myName {
         font-size: 1.5rem;
     }
-    
+
     .aboutMe {
         font-size: 0.95rem;
         line-height: 1.4;
     }
-    
+
     .photo {
         width: 180px;
         height: 220px;
     }
-    
+
     /* Make the class lists more compact on mobile */
     .classesContainer {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .classesList {
         margin: 0;
         padding-left: 20px;
     }
-    
+
     .classesList li {
         font-size: 0.9rem;
         margin-bottom: 5px;
@@ -319,19 +330,19 @@
     .aboutBox {
         padding: 10px;
     }
-    
+
     .generalHeader {
         font-size: 1.8rem;
     }
-    
+
     .myName {
         font-size: 1.3rem;
     }
-    
+
     .aboutMe {
         font-size: 0.9rem;
     }
-    
+
     .photo {
         width: 150px;
         height: 180px;
@@ -353,7 +364,8 @@
     pointer-events: none;
 }
 
-.doorLeft, .doorRight {
+.doorLeft,
+.doorRight {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -365,7 +377,7 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 21;
-    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .doorLeft {
@@ -379,11 +391,11 @@
 }
 
 .doorLeft.open {
-    transform: translate(-150%, -50%);
+    transform: translate(-220%, -50%);
 }
 
 .doorRight.open {
-    transform: translate(50%, -50%);
+    transform: translate(120%, -50%);
 }
 
 .doorOverlay {
@@ -395,7 +407,7 @@
     background: var(--color-accent);
     z-index: 20;
     opacity: 1;
-    transition: opacity 1.5s ease;
+    transition: opacity 2.s ease;
 }
 
 .doorOverlay.hidden {
@@ -408,8 +420,10 @@
     .doorContainer {
         display: none;
     }
-    
-    .doorLeft, .doorRight, .doorOverlay {
+
+    .doorLeft,
+    .doorRight,
+    .doorOverlay {
         display: none;
     }
 }
@@ -420,8 +434,10 @@
         opacity: 0 !important;
         visibility: hidden !important;
     }
-    
-    .doorLeft, .doorRight, .doorOverlay {
+
+    .doorLeft,
+    .doorRight,
+    .doorOverlay {
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
@@ -434,11 +450,12 @@
         opacity: 0 !important;
         visibility: hidden !important;
     }
-    
-    .doorLeft, .doorRight, .doorOverlay {
+
+    .doorLeft,
+    .doorRight,
+    .doorOverlay {
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
     }
 }
-

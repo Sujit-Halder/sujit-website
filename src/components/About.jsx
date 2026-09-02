@@ -55,15 +55,15 @@ const About = () => {
           <div className={`${styles.doorRight} ${doorsOpen ? styles.open : ''}`}></div>
         </div>
         <div className={`${styles.text} ${aboutVisible ? styles.visible : ''}`}>
-          <h1 className={styles.myName}>Alex Shrestha</h1>
+          <h1 className={styles.myName}>Sujit Halder</h1>
           <div className={styles.aboutMe}>
             <p>
-              I&apos;m a junior <span className={styles.bolded}>Computer Science</span> student at{" "}
-              <span className={styles.bolded}>The University of Maryland, College Park</span> with a minor in Economics. I&apos;m passionate about <span className={styles.bolded}>software development</span> with direct experience in full-stack development, security engineering, and research. I&apos;ve also become interested in <span className={styles.bolded}>quantum computing</span> and its real-world applications. I&apos;m driven to continuously learn, develop impactful solutions, and push the boundaries of technology. Check out my{" "}
+              I&apos;m a 2nd year <span className={styles.bolded}>Computer Science & Engineering</span> student at{" "}
+              <span className={styles.bolded}>National Institute of Technology, Jamshedpur</span>. I&apos;m passionate about <span className={styles.bolded}>Software Development</span> with direct experience in full-stack development, security engineering, and research. I&apos;ve also become interested in <span className={styles.bolded}>quantum computing</span> and its real-world applications. I&apos;m driven to continuously learn, develop impactful solutions, and push the boundaries of technology. Check out my{" "}
               <a
                 className={styles.resume}
                 target="_blank"
-                href={`${import.meta.env.BASE_URL}Alex-Shrestha-Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}Sujit-Halder-Resume.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
@@ -74,7 +74,7 @@ const About = () => {
             <div className={styles.classesContainer}>
               <ul className={styles.classesList}>
                 <li>💻 Advanced Data Structures</li>
-                <li>🧩 Algorithms</li>
+                <li>🧩 Design & Analysis of Algorithms</li>
                 <li>📦 Object-Oriented Programming</li>
                 <li>📊 Data Science</li>
                 <li>🔐 Computer and Network Security</li>
@@ -95,7 +95,7 @@ const About = () => {
           </div>
         </div>
         <div className={`${styles.photo} ${aboutVisible ? styles.visible : ''}`}>
-          <img src={"Me.jpg"} alt="Photo of Me" className={styles.profilePhoto} />
+          <img src={"ME.png"} alt="Photo of Me" className={styles.profilePhoto} />
         </div>
       </div>
     </section>
