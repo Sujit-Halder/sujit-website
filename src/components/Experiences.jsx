@@ -19,7 +19,7 @@ const Experiences = () => {
             setTimeout(() => {
               setTopRowVisible(true);
             }, 300);
-            
+
             setTimeout(() => {
               setBottomRowVisible(true);
             }, 300);
@@ -47,20 +47,33 @@ const Experiences = () => {
   return (
     <section id="Experiences" className={styles.container} ref={sectionRef}>
       <div className={styles.generalHeader}>Experiences</div>
-      
-      {/* First row - first 3 experiences */}
-      <div className={`${styles.experienceGrid} ${styles.topRow} ${topRowVisible ? styles.visible : ''}`}>
-        {firstThree.map((exp, i) => (
-          <FlipCard key={i} {...exp} />
-        ))}
-      </div>
-      
-      {/* Second row - last 2 experiences */}
-      <div className={`${styles.experienceGrid} ${styles.bottomRow} ${bottomRowVisible ? styles.visible : ''}`}>
-        {lastTwo.map((exp, i) => (
-          <FlipCard key={i + 3} {...exp} />
-        ))}
-      </div>
+
+      {experiences.length === 0 ? (
+        <div className={styles.noExperience}>
+          <p>Currently building experience through projects, research, and continuous learning.</p>
+          <p>Looking forward to my first professional opportunity.</p>
+        </div>
+      ) : (
+        <>
+          <div
+            className={`${styles.experienceGrid} ${styles.topRow} ${topRowVisible ? styles.visible : ""
+              }`}
+          >
+            {firstThree.map((exp, i) => (
+              <FlipCard key={i} {...exp} />
+            ))}
+          </div>
+
+          <div
+            className={`${styles.experienceGrid} ${styles.bottomRow} ${bottomRowVisible ? styles.visible : ""
+              }`}
+          >
+            {lastTwo.map((exp, i) => (
+              <FlipCard key={i + 3} {...exp} />
+            ))}
+          </div>
+        </>
+      )}
     </section>
   );
 }
@@ -73,9 +86,9 @@ function FlipCard({ logo, company, date, location, role, description, zoom = 1.0
         {/* Front of the card - 3/5 image, 2/5 content */}
         <div className={styles.flipCardFront}>
           <div className={styles.frontImageContainer}>
-            <img 
-              src={logo} 
-              alt={`${company} logo`} 
+            <img
+              src={logo}
+              alt={`${company} logo`}
               className={styles.frontImage}
               style={{ transform: `scale(${zoom})` }}
             />
@@ -85,13 +98,13 @@ function FlipCard({ logo, company, date, location, role, description, zoom = 1.0
             <p className={styles.frontSubtitle}>{date}</p>
           </div>
         </div>
-        
+
         {/* Back of the card - 1/5 shrunken image, 4/5 content */}
         <div className={styles.flipCardBack}>
           <div className={styles.backImageContainer}>
-            <img 
-              src={logo} 
-              alt={`${company} logo`} 
+            <img
+              src={logo}
+              alt={`${company} logo`}
               className={styles.backImage}
               style={{ transform: `scale(${zoom})` }}
             />

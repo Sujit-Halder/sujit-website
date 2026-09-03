@@ -58,8 +58,8 @@ const About = () => {
           <h1 className={styles.myName}>Sujit Halder</h1>
           <div className={styles.aboutMe}>
             <p>
-              I&apos;m a 2nd year <span className={styles.bolded}>Computer Science & Engineering</span> student at{" "}
-              <span className={styles.bolded}>National Institute of Technology, Jamshedpur</span>. I&apos;m passionate about <span className={styles.bolded}>Software Development</span> with direct experience in full-stack development, security engineering, and research. I&apos;ve also become interested in <span className={styles.bolded}>quantum computing</span> and its real-world applications. I&apos;m driven to continuously learn, develop impactful solutions, and push the boundaries of technology. Check out my{" "}
+              I&apos;m a 2<sup>nd</sup> year <span className={styles.bolded}>Computer Science & Engineering</span> student at{" "}
+              <span className={styles.bolded}>National Institute of Technology, Jamshedpur</span>. I&apos;m passionate about <span className={styles.bolded}>Software Development</span> with direct experience in full-stack development, security engineering, and IoT based research. I&apos;ve also become interested in <span className={styles.bolded}>Quantum Computing</span> and its real-world applications. I&apos;m driven to continuously learn, develop impactful solutions, and push the boundaries of technology. Check out my{" "}
               <a
                 className={styles.resume}
                 target="_blank"
@@ -76,26 +76,29 @@ const About = () => {
                 <li>💻 Advanced Data Structures</li>
                 <li>🧩 Design & Analysis of Algorithms</li>
                 <li>📦 Object-Oriented Programming</li>
-                <li>📊 Data Science</li>
+                <li>📊 Data Science & Machine Learning</li>
+                <li>🤖 Artificial Intelligence</li>
                 <li>🔐 Computer and Network Security</li>
               </ul>
               <ul className={styles.classesList}>
                 <li>⚛️ Quantum Computing</li>
-                <li>🛰️ Quantum Technologies</li>
-                <li>📐 Linear Algebra</li>
-                <li>➗ Calculus III</li>
-                <li>🎲 Advanced Statistics</li>
+                <li>📱 Mobile & Pervasive Computing</li>
+                <li>🛰️ Satellite Communications</li>
+                <li>🌐 Distributed Systems</li>
+                <li>☁️ Cloud Computing</li>
+                <li>📐 Linear Algebra & Calculaus</li>
+                <li></li>
               </ul>
             </div>
             <br />
             <h3 className={styles.bolded}>Random Interests:</h3>
             <p>
-              🦇👨 | 🏈 | 🐦🟣 | 🏀👑 | 🎬 | 💥🚄 | 💸 | 🏋️‍♂️ | 🎮 | 🥩🍣 | 🎶 | 🗺️ | 💤
+              👑👹🔟👨 | 🏏 | ⚽ | 🎬 | 💥🚄 | 💸 | 🏋️‍♂️ | 🎮 | 🍜🥩🍣 | 🎶 | 🗺️ | 💤
             </p>
           </div>
         </div>
         <div className={`${styles.photo} ${aboutVisible ? styles.visible : ''}`}>
-          <img src={"ME.png"} alt="Photo of Me" className={styles.profilePhoto} />
+          <img src={"ME2.JPG"} alt="Photo of Me" className={styles.profilePhoto} />
         </div>
       </div>
     </section>
