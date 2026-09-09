@@ -1,14 +1,14 @@
 import styles from '../styles/contact.module.css';
 import { Linkedin, Github, Facebook } from "../constants/icons";
 
-const Contact = () => {
+const Contacts = () => {
   return (
-    <section id="Contact" className={styles.contact}>
+    <section id="Contacts" className={styles.contact}>
       <h1 className={styles.header}>Reach Out</h1>
 
       <div className={styles.socialGroup}>
         <h2 className={styles.contactSub}>Email</h2>
-        <div className={styles.myemail}><a href="mailto:2025pgcscs11@nitjsr.ac.in">2025pgcscs11@nitjsr.ac.in</a></div>
+        <div className={styles.myemail}><a href="mailto:mail2sujithalder@gmail.com">mail2sujithalder@gmail.com</a></div>
       </div>
 
       <div className={styles.socialGroup}>
@@ -25,4 +25,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

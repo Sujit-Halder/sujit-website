@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { projects } from "../../constants";
+import { researches } from "../../constants";
 import { FaArrowRight, FaArrowLeft, FaExternalLinkAlt } from 'react-icons/fa';
 import styles from "../../styles/project.module.css";
 
 const ImageSlider = () => {
 
     const [current, setCurrent] = useState(0);
-    const length = projects.length;
+    const length = researches.length;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
@@ -16,11 +16,11 @@ const ImageSlider = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
 
-    // Empty state — no projects to display
-    if (!Array.isArray(projects) || projects.length <= 0) {
+    // Empty state — no researches to display
+    if (!Array.isArray(researches) || researches.length <= 0) {
         return (
             <div className={styles.emptyState}>
-                <p>No projects to show right now — check back soon!</p>
+                <p>No researches to show right now — check back soon!</p>
             </div>
         );
     }
@@ -30,7 +30,7 @@ const ImageSlider = () => {
             <FaArrowLeft className={styles.leftArrow} onClick={prevSlide} />
             <div className={styles.projectBox}>
                 <div className={styles.slider}>
-                    {projects.map((project, index) => (
+                    {researches.map((project, index) => (
                         <div key={index} className={`${styles.slide} ${index === current ? styles.active : ''}`}
                         >
                             {index === current && (

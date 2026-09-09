@@ -9,15 +9,16 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects/Projects';
 import Experiences from './components/Experiences';
-import Contact from './components/Contact';
+import Contacts from './components/Contacts';
 import Navbar from './components/Navbar';
+import Researches from './components/Researches/Researches';
 
 
 function App() {
   return (
-   <><Navbar /> <Hero /> <About /> <Skills /> <Experiences /> <Projects /> <Contact /></> 
+   <><Navbar /> <Hero /> <About /> <Skills /> <Experiences /> <Projects /> <Researches/> <Contacts /></> 
 
   );
 }
 
-export default App
+export default App;

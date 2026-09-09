@@ -54,6 +54,10 @@ export const projects = [
   // },
 ];
 
+export const researches = [
+  
+];
+
 export const technologies = [
   // {
   //   name: "Java",

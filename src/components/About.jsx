@@ -17,7 +17,7 @@ const About = () => {
             setTimeout(() => {
               setDoorsOpen(true);
             }, 300);
-            
+
             // Show about content after doors start opening
             setTimeout(() => {
               setAboutVisible(true);
@@ -46,7 +46,7 @@ const About = () => {
   return (
     <section id="About" className={styles.container} ref={sectionRef}>
       <h1 className={styles.generalHeader}>About Me</h1>
-      
+
       <div className={`${styles.aboutBox} ${aboutVisible ? styles.visible : ''}`}>
         {/* Door Transition - positioned over the about box */}
         <div className={styles.doorContainer}>
@@ -58,8 +58,14 @@ const About = () => {
           <h1 className={styles.myName}>Sujit Halder</h1>
           <div className={styles.aboutMe}>
             <p>
-              I&apos;m a 2<sup>nd</sup> year <span className={styles.bolded}>Computer Science & Engineering</span> student at{" "}
-              <span className={styles.bolded}>National Institute of Technology, Jamshedpur</span>. I&apos;m passionate about <span className={styles.bolded}>Software Development</span> with direct experience in full-stack development, security engineering, and IoT based research. I&apos;ve also become interested in <span className={styles.bolded}>Quantum Computing</span> and its real-world applications. I&apos;m driven to continuously learn, develop impactful solutions, and push the boundaries of technology. Check out my{" "}
+              I&apos;m a 2<sup>nd</sup> year{" "}
+              <span className={styles.bolded}>Master of Technology</span> student in{" "}
+              <span className={styles.bolded}>Computer Science & Engineering</span> at{" "}
+              <span className={styles.bolded}>National Institute of Technology, Jamshedpur</span>.
+              I&apos;m passionate about <span className={styles.bolded}>Software Development</span>{" "}
+              with direct experience in full-stack development, security engineering, and IoT-based
+              research. I&apos;m driven to continuously learn, develop impactful solutions, and push
+              the boundaries of technology. Check out my{" "}
               <a
                 className={styles.resume}
                 target="_blank"

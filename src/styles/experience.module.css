@@ -20,6 +20,15 @@
     min-height: 100vh; 
 }
 
+.noExperience {
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  color: #a49f9f;
+  font-size: 1.1rem;
+}
+
 .experienceGrid {
     display: grid;
     gap: 2rem;
