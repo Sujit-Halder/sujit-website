@@ -38,7 +38,7 @@ export const skills = [
 */
 export const projects = [
   {
-    path: "projects/Honeypot.png", title: "TrustWall Project", description: "Designed and developed a Unified Threat Management (UTM) system integrating firewall, proxy, VPN, and packet inspection to monitor, analyze, and secure network traffic in a Linux environment.", languages: "C++, JavaScript, HTML, CSS", frameworks: "NodeJs, ReactJs", tools: "Git, Linux", link: "https://github.com/MontyAnand/Trustwall_Major_Project",
+    path: "projects/Trustwall.png", title: "TrustWall Project", description: "Designed and developed a Unified Threat Management (UTM) system integrating firewall, proxy, VPN, and packet inspection to monitor, analyze, and secure network traffic in a Linux environment.", languages: "C++, JavaScript, HTML, CSS", frameworks: "NodeJs, ReactJs", tools: "Git, Linux", link: "https://github.com/MontyAnand/Trustwall_Major_Project",
   },
   // {
   //   path: "projects/BrowserBuddy.png", title: "Browser Buddy Extension", description: "Created a virtual wellness pet browser extension in under 24 hours at Bitcamp Hackathon. The extension implements a pomodoro timer to help users take active breaks and gamify working sessions with XP and shop tokens for the customizable pet.", languages: "React, TypeScript, Git, CSS", link: "",
