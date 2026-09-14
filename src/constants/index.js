@@ -30,28 +30,11 @@ export const skills = [
   "Jira",
 ];
 
-// stock images
-/*
-  https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg 
-  https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D
-  https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631.jpg
-*/
+
 export const projects = [
   {
     path: "projects/Trustwall.png", title: "TrustWall Project", description: "Designed and developed a Unified Threat Management (UTM) system integrating firewall, proxy, VPN, and packet inspection to monitor, analyze, and secure network traffic in a Linux environment.", languages: "C++, JavaScript, HTML, CSS", frameworks: "NodeJs, ReactJs", tools: "Git, Linux", link: "https://github.com/MontyAnand/Trustwall_Major_Project",
   },
-  // {
-  //   path: "projects/BrowserBuddy.png", title: "Browser Buddy Extension", description: "Created a virtual wellness pet browser extension in under 24 hours at Bitcamp Hackathon. The extension implements a pomodoro timer to help users take active breaks and gamify working sessions with XP and shop tokens for the customizable pet.", languages: "React, TypeScript, Git, CSS", link: "",
-  // },
-  // {
-  //   path: "projects/Maze.png", title: "Maze Solver", description: "Converted large-scale mazes into graphs, mapping all nodes to an x-y coordinate system. Found the optimal solution 100% of the time using Dijkstra's algorithm, breadth-first and depth-first searches.", languages: "Java", link: "",
-  // },
-  // {
-  //   path: "projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. While the app was in its early stages, it allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "",
-  // },
-  // {
-  //   path: "projects/Soccer.png", title: "Dynamic Soccer Ball", description: "Prototyped an app for a dynamic soccer ball that tracks training sessions and statistics, allowing users to compare with friends. Went through the product management lifecycle, from conceptualizing to MVP creation, financial planning, and prototyping.", languages: "Figma", link: "https://www.figma.com/proto/riuULK8sholAHFUfmXm2FR/Dynamic-Soccer-Ball-App?node-id=2-2&p=f&t=9Dyg8KCzjmHoqDVz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
-  // },
 ];
 
 export const researches = [
@@ -59,11 +42,6 @@ export const researches = [
 ];
 
 export const technologies = [
-  // {
-  //   name: "Java",
-  //   icon: "java",
-  //   category: "Languages"
-  // },
   {
     name: "Python",
     icon: "python",
@@ -79,11 +57,6 @@ export const technologies = [
     icon: "javascript",
     category: "Languages"
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: "typescript",
-  //   category: "Languages"
-  // },
   {
     name: "HTML/CSS",
     icon: "htmlcss",
@@ -110,16 +83,6 @@ export const technologies = [
     icon: "node",
     category: "Frameworks"
   },
-  // {
-  //   name: ".NET",
-  //   icon: "net",
-  //   category: "Frameworks"
-  // },
-  // {
-  //   name: "Flask",
-  //   icon: "flask",
-  //   category: "Frameworks"
-  // },
   {
     name: "Git",
     icon: "git",
