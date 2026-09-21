@@ -35,6 +35,9 @@ export const projects = [
   {
     path: "projects/Trustwall.png", title: "TrustWall Project", description: "Designed and developed a Unified Threat Management (UTM) system integrating firewall, proxy, VPN, and packet inspection to monitor, analyze, and secure network traffic in a Linux environment.", languages: "C++, JavaScript, HTML, CSS", frameworks: "NodeJs, ReactJs", tools: "Git, Linux", link: "https://github.com/MontyAnand/Trustwall_Major_Project",
   },
+  {
+    path: "projects/CineVault.png", title: "CineVault Project", description: "Designed and developed for maintaining and tracking a private collections of Film, Series with various user-friendly features like filtering, sorting, seraching by different names and very sophisticated data backup system that will ensure that owner never loss the data.", languages: "JavaScript, HTML, CSS", frameworks: "NodeJs, ReactJs", tools: "Git", link: "https://github.com/Sujit-Halder/CineVault",
+  },
 ];
 
 export const researches = [
