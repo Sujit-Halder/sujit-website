@@ -1,4 +1,4 @@
 # My-Website
-You can view the site [here](https://shresthaa23.github.io/shrestha-site/).
+You can view the site [here](https://sujithalder.in/).
 
-please don't view it on mobile for now
+Please don't view it on mobile for now
